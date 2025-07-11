@@ -1,0 +1,13 @@
+{
+  "itemGroup.potionutility": "Example Mod Tab",
+  "block.potionutility.example_block": "Example Block",
+  "item.potionutility.example_item": "Example Item",
+
+  "potionutility.configuration.title": "Potion Utility Configs",
+  "potionutility.configuration.section.potionutility.common.toml": "Potion Utility Configs",
+  "potionutility.configuration.section.potionutility.common.toml.title": "Potion Utility Configs",
+  "potionutility.configuration.items": "Item List",
+  "potionutility.configuration.logDirtBlock": "Log Dirt Block",
+  "potionutility.configuration.magicNumberIntroduction": "Magic Number Text",
+  "potionutility.configuration.magicNumber": "Magic Number"
+}

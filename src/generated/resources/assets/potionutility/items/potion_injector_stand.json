@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "potionutility:block/potion_injector_stand"
+  }
+}

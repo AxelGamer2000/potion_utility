@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "potionutility:block/potion_injector_stand"
+    }
+  }
+}
