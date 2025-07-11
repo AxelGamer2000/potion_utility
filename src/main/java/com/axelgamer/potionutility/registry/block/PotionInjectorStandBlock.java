@@ -1,5 +1,6 @@
 package com.axelgamer.potionutility.registry.block;
 
+import com.axelgamer.potionutility.registry.blockEntity.PotionInjectorStandBlockEntity;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;
@@ -32,6 +33,6 @@ public class PotionInjectorStandBlock extends BaseEntityBlock {
 
     @Override
     public @Nullable BlockEntity newBlockEntity(BlockPos blockPos, BlockState blockState) {
-        return null;
+        return new PotionInjectorStandBlockEntity(blockPos, blockState);
     }
 }
