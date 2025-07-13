@@ -1,9 +1,6 @@
 package com.axelgamer.potionutility;
 
-import com.axelgamer.potionutility.registry.ModBlockEntities;
-import com.axelgamer.potionutility.registry.ModBlocks;
-import com.axelgamer.potionutility.registry.ModCreativeTabs;
-import com.axelgamer.potionutility.registry.ModItems;
+import com.axelgamer.potionutility.registry.*;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -70,6 +67,7 @@ public class PotionUtility {
         ModItems.ITEMS.register(modEventBus);
         ModCreativeTabs.CREATIVE_MODE_TABS.register(modEventBus);
         ModBlockEntities.BLOCK_ENTITY_TYPES.register(modEventBus);
+        ModMenus.MENU_TYPES.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
 

@@ -1,14 +1,21 @@
 package com.axelgamer.potionutility;
 
+import com.axelgamer.potionutility.registry.ModMenus;
+import com.axelgamer.potionutility.registry.menu.PotionInjectorStandMenu;
+import com.axelgamer.potionutility.registry.screen.PotionInjectorStandScreen;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.screens.inventory.BrewingStandScreen;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.world.inventory.BrewingStandMenu;
+import net.minecraft.world.level.block.entity.BrewingStandBlockEntity;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import net.neoforged.neoforge.client.event.RegisterNamedRenderTypesEvent;
 import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
@@ -29,5 +36,10 @@ public class PotionUtilityClient {
         PotionUtility.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
 
 
+    }
+
+    @SubscribeEvent
+    public static void registerScreens(RegisterMenuScreensEvent event) {
+        event.register(ModMenus.POTION_INJECTOR_STAND_MENU.get(), PotionInjectorStandScreen::new);
     }
 }

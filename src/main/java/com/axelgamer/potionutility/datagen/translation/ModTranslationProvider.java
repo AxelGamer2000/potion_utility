@@ -17,5 +17,6 @@ public class ModTranslationProvider extends LanguageProvider {
     protected void addTranslations() {
         this.add(ModBlocks.POTION_INJECTOR_STAND.toStack(), "Potion Injector Stand");
         this.add("itemGroup.potionutility", "Potion Utility");
+        this.add("container.potion_injector", "Potion Injector Stand");
     }
 }
