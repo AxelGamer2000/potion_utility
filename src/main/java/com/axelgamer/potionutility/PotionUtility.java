@@ -63,6 +63,7 @@ public class PotionUtility {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
+        ModDataComponents.DATA_COMPONENT_TYPES.register(modEventBus);
         ModBlocks.BLOCKS.register(modEventBus);
         ModItems.ITEMS.register(modEventBus);
         ModCreativeTabs.CREATIVE_MODE_TABS.register(modEventBus);

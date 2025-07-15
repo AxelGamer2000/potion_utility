@@ -1,0 +1,48 @@
+{
+  "model": {
+    "type": "minecraft:condition",
+    "on_false": {
+      "type": "minecraft:condition",
+      "on_true": {
+        "type": "minecraft:model",
+        "model": "potion_utility:item/large_potion_2",
+        "tints": [
+          {
+            "type": "minecraft:potion",
+            "default": -13083194
+          }
+        ]
+      },
+      "on_false": {
+        "type": "minecraft:model",
+        "model": "potion_utility:item/large_potion_0",
+        "tints": [
+          {
+            "type": "minecraft:potion",
+            "default": -13083194
+          }
+        ]
+      },
+      "property": "minecraft:component",
+      "predicate": "potion_utility:potion_level",
+      "value": {
+        "level": 1
+      }
+    },
+    "on_true": {
+      "type": "minecraft:model",
+      "model": "potion_utility:item/large_potion_1",
+      "tints": [
+        {
+          "type": "minecraft:potion",
+          "default": -13083194
+        }
+      ]
+      },
+    "property": "minecraft:component",
+    "predicate": "potion_utility:potion_level",
+    "value": {
+      "level": 2
+    }
+  }
+}

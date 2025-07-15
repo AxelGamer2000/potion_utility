@@ -17,5 +17,6 @@ public class ModCreativeTabs {
             .icon(() -> ModItems.POTION_INJECTOR_STAND_ITEM.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
                 output.accept(ModItems.POTION_INJECTOR_STAND_ITEM.get());
+                output.accept(ModItems.LARGE_POTION.get());
             }).build());
 }

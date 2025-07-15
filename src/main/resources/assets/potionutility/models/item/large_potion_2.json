@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "potion_utility:item/large_potion_overlay_3",
+    "layer1": "potion_utility:item/large_bottle"
+  }
+}
