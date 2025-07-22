@@ -13,7 +13,6 @@ import net.minecraft.world.item.CrossbowItem;
 
 public record PotionLevelPredicate(MinMaxBounds.Ints level) implements SingleComponentItemPredicate<PotionLevel> {
     public static final Codec<PotionLevelPredicate> CODEC = RecordCodecBuilder.create(instance -> instance.group(MinMaxBounds.Ints.CODEC.optionalFieldOf("level", MinMaxBounds.Ints.ANY).forGetter(PotionLevelPredicate::level)).apply(instance, PotionLevelPredicate::new));
-    CrossbowItem.ChargeType
 
     @Override
     public DataComponentType<PotionLevel> componentType() {

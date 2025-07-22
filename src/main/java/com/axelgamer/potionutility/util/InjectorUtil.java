@@ -30,7 +30,7 @@ public class InjectorUtil {
                 }
             });
         }
-        DataComponents.CHARGED_PROJECTILES
+
         targetRemover.forEach(index -> {
             target.remove((int) index);
         });
