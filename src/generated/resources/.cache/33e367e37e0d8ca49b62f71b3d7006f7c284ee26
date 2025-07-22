@@ -1,3 +1,5 @@
-// 1.21.6	2025-07-11T09:50:27.610611246	PotionUtility RecipeProvider
+// 1.21.6	2025-07-19T15:51:33.772021768	PotionUtility RecipeProvider
+94beafe1c7e589b0514e9e501a1062a6844f9b85 data/potionutility/advancement/recipes/misc/large_bottle.json
 d541cbef3deb7ec95d4cd0cd388b1b44cb31e55c data/potionutility/advancement/recipes/misc/potion_injector_stand.json
+b0beb5bc1a97b4c0dabe5a367c0ddbdd5f0412bb data/potionutility/recipe/large_bottle.json
 23f406cfb03f84717bf6784632379bcd62f8343e data/potionutility/recipe/potion_injector_stand.json

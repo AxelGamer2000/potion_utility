@@ -1,8 +1,10 @@
 package com.axelgamer.potionutility.util;
 
 import net.minecraft.core.Holder;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.level.block.entity.BlockEntity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,7 +30,7 @@ public class InjectorUtil {
                 }
             });
         }
-
+        DataComponents.CHARGED_PROJECTILES
         targetRemover.forEach(index -> {
             target.remove((int) index);
         });

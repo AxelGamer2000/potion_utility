@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": "minecraft:glass_bottle",
+    "g": "minecraft:glass"
+  },
+  "pattern": [
+    "ggg",
+    "gbg",
+    "ggg"
+  ],
+  "result": {
+    "count": 1,
+    "id": "potionutility:large_bottle"
+  }
+}

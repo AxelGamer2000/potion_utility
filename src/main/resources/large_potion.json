@@ -5,7 +5,7 @@
       "type": "minecraft:condition",
       "on_true": {
         "type": "minecraft:model",
-        "model": "potion_utility:item/large_potion_2",
+        "model": "potionutility:item/large_potion_2",
         "tints": [
           {
             "type": "minecraft:potion",
@@ -15,7 +15,7 @@
       },
       "on_false": {
         "type": "minecraft:model",
-        "model": "potion_utility:item/large_potion_0",
+        "model": "potionutility:item/large_potion",
         "tints": [
           {
             "type": "minecraft:potion",
@@ -24,14 +24,14 @@
         ]
       },
       "property": "minecraft:component",
-      "predicate": "potion_utility:potion_level",
+      "predicate": "potionutility:potion_level",
       "value": {
         "level": 1
       }
     },
     "on_true": {
       "type": "minecraft:model",
-      "model": "potion_utility:item/large_potion_1",
+      "model": "potionutility:item/large_potion_1",
       "tints": [
         {
           "type": "minecraft:potion",
@@ -40,7 +40,7 @@
       ]
       },
     "property": "minecraft:component",
-    "predicate": "potion_utility:potion_level",
+    "predicate": "potionutility:potion_level",
     "value": {
       "level": 2
     }

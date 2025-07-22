@@ -31,6 +31,17 @@ public class ModRecipesProvider extends RecipeProvider {
 
                 .unlockedBy("has_brewing_stand", this.has(Items.BREWING_STAND))
                 .save(this.output);
+
+        ShapedRecipeBuilder.shaped(this.registries.lookupOrThrow(Registries.ITEM), RecipeCategory.MISC, ModItems.LARGE_BOTTLE)
+                .pattern("ggg")
+                .pattern("gbg")
+                .pattern("ggg")
+
+                .define('g', Blocks.GLASS)
+                .define('b', Items.GLASS_BOTTLE)
+
+                .unlockedBy("has_glass_bottle", this.has(Items.GLASS_BOTTLE))
+                .save(this.output);
     }
 
     public static class Runner extends RecipeProvider.Runner {
