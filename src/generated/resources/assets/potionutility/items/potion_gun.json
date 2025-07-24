@@ -1,0 +1,39 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "cases": [
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "potionutility:item/potion_gun_empty"
+        },
+        "when": "empty"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "potionutility:item/potion_gun_bottle"
+        },
+        "when": "bottle"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "potionutility:item/potion_gun_filled",
+          "tints": [
+            {
+              "type": "potionutility:potion_gun",
+              "default": -13083194
+            }
+          ]
+        },
+        "when": "filled"
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/egg"
+    },
+    "property": "potionutility:charged_potion"
+  }
+}
