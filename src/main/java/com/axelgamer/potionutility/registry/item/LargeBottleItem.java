@@ -2,7 +2,10 @@ package com.axelgamer.potionutility.registry.item;
 
 import com.axelgamer.potionutility.registry.ModDataComponents;
 import com.axelgamer.potionutility.registry.ModItems;
+import com.axelgamer.potionutility.registry.dataComponent.ChargedPotion;
 import com.axelgamer.potionutility.registry.dataComponent.PotionLevel;
+import net.minecraft.client.color.item.Dye;
+import net.minecraft.client.color.item.Potion;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -113,6 +116,9 @@ public class LargeBottleItem extends Item {
                 large.set(ModDataComponents.POTION_LEVEL, new PotionLevel(1));
                 player.containerMenu.setCarried(large);
                 slot.set(new ItemStack(Items.GLASS_BOTTLE));
+            } else if (other.is(ModItems.POTION_GUN)) {
+                other.set(ModDataComponents.CHARGED_POTION, new ChargedPotion(stack));
+                player.containerMenu.setCarried(ItemStack.EMPTY);
             }
         }
         return true;

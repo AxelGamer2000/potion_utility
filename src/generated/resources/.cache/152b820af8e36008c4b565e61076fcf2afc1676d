@@ -1,6 +1,7 @@
-// 1.21.6	2025-07-17T14:50:10.975298972	Model Definitions - potionutility
+// 1.21.6	2025-07-24T10:57:44.438719179	Model Definitions - potionutility
 1a57c6971587fbe303ed248e1e5f08cd9fc65736 assets/potionutility/blockstates/potion_injector_stand.json
 40cdef3a7a660f97c8b9d8871ea734bd7da228d6 assets/potionutility/items/large_bottle.json
 acb6c7c10e8e79cc3b99f98c458e830eb47085be assets/potionutility/items/large_potion.json
+c914636cef77606fcb94c53d2ed639c2ddd9ffc5 assets/potionutility/items/potion_gun.json
 97fc4de0be6f3b38fb75cb0cb9d98d56c011ed5b assets/potionutility/items/potion_injector_stand.json
 b43ec5b26f812b31970209a58798f5145ee8eccc assets/potionutility/models/item/large_bottle.json

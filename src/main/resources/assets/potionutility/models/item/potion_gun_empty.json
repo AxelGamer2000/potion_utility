@@ -2,8 +2,8 @@
 	"format_version": "1.21.6",
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "potionutility:item/potion_gun",
-		"1": "block/potion_gun_overlay",
+		"0": "potionutility:item/potion_gun_empty",
+		"1": "potionutility:item/potion_gun_overlay_empty",
 		"particle": "potionutility:item/potion_gun"
 	},
 	"elements": [

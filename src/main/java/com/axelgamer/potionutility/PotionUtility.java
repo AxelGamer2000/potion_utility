@@ -1,7 +1,10 @@
 package com.axelgamer.potionutility;
 
 import com.axelgamer.potionutility.registry.*;
+import com.axelgamer.potionutility.registry.dataComponentPredicate.ChargedPotionSelect;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.alchemy.PotionBrewing;
+import net.neoforged.neoforge.client.event.RegisterSelectItemModelPropertyEvent;
 import net.neoforged.neoforge.event.brewing.RegisterBrewingRecipesEvent;
 import org.slf4j.Logger;
 
@@ -62,6 +65,7 @@ public class PotionUtility {
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
+        modEventBus.addListener(this::registerSelectProperties);
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
@@ -94,5 +98,12 @@ public class PotionUtility {
 
     @SubscribeEvent
     public void registerBrewingRecipes(RegisterBrewingRecipesEvent event) {
+    }
+
+    public void registerSelectProperties(RegisterSelectItemModelPropertyEvent event) {
+        event.register(
+                ResourceLocation.fromNamespaceAndPath(MODID, "charged_potion"),
+                ChargedPotionSelect.TYPE
+        );
     }
 }

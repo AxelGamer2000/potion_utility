@@ -3,6 +3,7 @@ package com.axelgamer.potionutility.registry.item;
 import com.axelgamer.potionutility.PotionUtility;
 import com.axelgamer.potionutility.registry.ModDataComponents;
 import com.axelgamer.potionutility.registry.ModItems;
+import com.axelgamer.potionutility.registry.dataComponent.ChargedPotion;
 import com.axelgamer.potionutility.registry.dataComponent.PotionLevel;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.server.level.ServerLevel;
@@ -159,6 +160,9 @@ public class LargePotionItem extends PotionItem {
                         }
                     }
                 }
+            } else if (other.is(ModItems.POTION_GUN)) {
+                other.set(ModDataComponents.CHARGED_POTION, new ChargedPotion(stack));
+                player.containerMenu.setCarried(ItemStack.EMPTY);
             }
             return true;
         }

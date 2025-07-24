@@ -39,5 +39,6 @@ public class ModCreativeTabs {
                 });
                 output.accept(ModItems.LARGE_BOTTLE.get());
                 output.accept(ModItems.POTION_INJECTOR_STAND_ITEM.get());
+                output.accept(ModItems.POTION_GUN.get());
             }).build());
 }
